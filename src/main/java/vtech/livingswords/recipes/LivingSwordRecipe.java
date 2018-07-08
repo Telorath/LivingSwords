@@ -1,4 +1,4 @@
-package vtech.livingswords.items.recipes;
+package vtech.livingswords.recipes;
 
 import java.util.List;
 

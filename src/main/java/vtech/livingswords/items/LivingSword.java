@@ -15,20 +15,19 @@ public class LivingSword extends ItemSword {
 	public LivingSword(ToolMaterial p_i45356_1_) {
 		super(p_i45356_1_);
 	}
-	
-	private float getBaseAttackDamage(ItemStack stack)
-	{		
+
+	private float getBaseAttackDamage(ItemStack stack) {
+		if (!stack.hasTagCompound()) {
+			return 5.0f;
+		}
 		return NBTHelper.getLivingSwordDamage(stack.getTagCompound());
 	}
-	
+
 	@Override
 	public void addInformation(ItemStack itemStack, EntityPlayer entity, List TooltipString, boolean advanced) {
 
-		if (itemStack.hasTagCompound())
-		{
-			TooltipString.add(String.format("+%.1f damage", getBaseAttackDamage(itemStack)));
-		}
-		
+		TooltipString.add(String.format("+%.1f damage", getBaseAttackDamage(itemStack)));
+
 		TooltipString.add("This sword is ALIVE!");
 	}
 
