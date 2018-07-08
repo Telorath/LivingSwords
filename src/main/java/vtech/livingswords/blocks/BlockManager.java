@@ -9,12 +9,19 @@ public class BlockManager {
 
 	public static final Block vTechBlock = new VTechBlock(Material.rock).setBlockName("VortechsBlock");
 
+	public static final Block plasmaBlock = new VTechBlock(Material.rock).setBlockName("PlasmaBlock");
+
 	public static void registerBlocks() {
 
 		vTechBlock.setCreativeTab(CreativeTabs.tabDecorations);
+		
+		plasmaBlock.setCreativeTab(CreativeTabs.tabDecorations);
 
 		GameRegistry.registerBlock(vTechBlock,
 				vTechBlock.getUnlocalizedName().substring(vTechBlock.getUnlocalizedName().indexOf('.')));
+
+		GameRegistry.registerBlock(plasmaBlock,
+				plasmaBlock.getUnlocalizedName().substring(plasmaBlock.getUnlocalizedName().indexOf('.')));
 
 	}
 

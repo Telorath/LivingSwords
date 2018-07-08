@@ -11,6 +11,7 @@ import vtech.livingswords.recipes.RecipeManager;
 public abstract class CommonProxy {
 
 	public static final String VTECHTEXTURE = LivingSwords.MOD_ID.toLowerCase() + ":Vortexblock_1";
+	public static final String PLASMATEXTURE = LivingSwords.MOD_ID.toLowerCase() + ":Plasma_block";
 	
 	public void init(FMLInitializationEvent event) {
 		GameRegistry.registerItem(ItemManager.livingSword,
@@ -25,6 +26,7 @@ public abstract class CommonProxy {
 	public void registerBlockTextures()
 	{
 		BlockManager.vTechBlock.setBlockTextureName(VTECHTEXTURE);
+		BlockManager.plasmaBlock.setBlockTextureName(PLASMATEXTURE);
 	}
 
 	public void registerRenderers() {
