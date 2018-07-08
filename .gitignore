@@ -1,2 +1,9 @@
 /eclipse
 /.gradle
+/crash-reports
+/bin
+/config
+/logs
+options.txt
+/saves
+usernamecache.json
