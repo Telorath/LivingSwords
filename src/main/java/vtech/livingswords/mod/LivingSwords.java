@@ -4,8 +4,6 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.Item;
 import vtech.livingswords.proxies.CommonProxy;
 
 @Mod(modid = LivingSwords.MOD_ID, version = LivingSwords.VERSION)

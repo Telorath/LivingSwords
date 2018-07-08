@@ -4,6 +4,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import vtech.livingswords.items.ItemManager;
+import vtech.livingswords.items.RecipeManager;
 import vtech.livingswords.mod.LivingSwords;
 
 public abstract class CommonProxy {
@@ -13,11 +14,17 @@ public abstract class CommonProxy {
 		ItemManager.livingSword.setCreativeTab(CreativeTabs.tabTools);
 		GameRegistry.registerItem(ItemManager.livingSword, LivingSwords.MOD_ID + ItemManager.livingSword.getUnlocalizedName().substring(5));
 		registerRenderers();
+		registerRecipes();
 	}
 	
 	public void registerRenderers()
 	{
 		
+	}
+
+	public void registerRecipes()
+	{
+		RecipeManager.registerRecipes();
 	}
 	
 }

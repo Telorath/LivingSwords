@@ -4,7 +4,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.AdvancedModelLoader;
 import net.minecraftforge.client.model.IModelCustom;
 
-public class visualResourceManager {
+public class VisualResourceManager {
 
 	public static IModelCustom getModel(String location)
 	{
