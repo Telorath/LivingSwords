@@ -4,6 +4,7 @@
 /bin
 /config
 /logs
+*.DS_Store
 options.txt
 /saves
 usernamecache.json
