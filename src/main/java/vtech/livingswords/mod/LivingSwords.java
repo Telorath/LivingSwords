@@ -11,11 +11,16 @@ public class LivingSwords {
 	public static final String CLIENT_PROXY = "vtech.livingswords.proxies.ClientProxy";
 	public static final String SERVER_PROXY = "vtech.livingswords.proxies.ServerProxy";
 	public static final String MOD_ID = "LivingSwords";
-	public static final String VERSION = "0.1";
+	public static final String VERSION = "0.2";
 
 	@SidedProxy(clientSide = CLIENT_PROXY, serverSide = SERVER_PROXY)
 	public static CommonProxy proxy;
 
+	public static float VERSION_AS_FLOAT()
+	{
+		return Float.parseFloat(VERSION);
+	}
+	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
