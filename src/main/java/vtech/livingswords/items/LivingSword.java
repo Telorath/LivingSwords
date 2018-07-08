@@ -15,7 +15,6 @@ public class LivingSword extends ItemSword {
 
 	public LivingSword(ToolMaterial p_i45356_1_) {
 		super(p_i45356_1_);
-		setContainerItem(Items.iron_sword);
 	}
 	
 	private float getBaseAttackDamage(LivingSwordNBTBundle sword) {
