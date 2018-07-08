@@ -17,6 +17,8 @@ public class BlockManager {
 		
 		plasmaBlock.setCreativeTab(CreativeTabs.tabDecorations);
 
+		plasmaBlock.setLightLevel(1.0f);
+		
 		GameRegistry.registerBlock(vTechBlock,
 				vTechBlock.getUnlocalizedName().substring(vTechBlock.getUnlocalizedName().indexOf('.')));
 

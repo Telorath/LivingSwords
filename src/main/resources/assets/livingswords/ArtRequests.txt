@@ -1,3 +1,4 @@
 One Neon block with neon extending to either side
 One neon block with neon extending to the left
 One neon block with neon extending to the right
+One block resembling the neon block without the neon
